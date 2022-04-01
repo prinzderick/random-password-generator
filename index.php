@@ -5,7 +5,7 @@ $upper_chars = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O'
 
 $numbers = array('0','1','2','3','4','5','6','7','8','9');
 
-$special_chars = array('!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','}','\','|',':',';','?','/','.',','`','~','[',']');
+$special_chars = array('!','@','#','$','%','^','&','*','(',')','_','-','+','=','{','}','\\','|',':',';','?','/','.',',','`','~','[',']');
 
 
 function generate_base(){
@@ -17,17 +17,17 @@ function generate_base(){
 }
 
 function generate_password($base,$lower_chars,$upper_chars,$numbers,$special_chars){
-  $value=$domain[array_rand($lower_chars)];
-	$base=$base.$value;
+  $value=$lower_chars[array_rand($lower_chars)];
+  $base=$base.$value;
   
-  $value=$domain[array_rand($upper_chars)];
-	$base=$base.$value;
+  $value=$upper_chars[array_rand($upper_chars)];
+  $base=$base.$value;
   
-  $value=$domain[array_rand($numbers)];
-	$base=$base.$value;
+  $value=$numbers[array_rand($numbers)];
+  $base=$base.$value;
   
-  $value=$domain[array_rand($special_chars)];
-	$base=$base.$value;
+  $value=$special_chars[array_rand($special_chars)];
+  $base=$base.$value;
   
   $password = str_shuffle($base);
   return $password;
