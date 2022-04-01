@@ -36,7 +36,7 @@ function generate_password($base,$lower_chars,$upper_chars,$numbers,$special_cha
 for($i = 0;$i < 12; $i++){
   $base = generate_base();
   $password = generate_password($base,$lower_chars,$upper_chars,$numbers,$special_chars);
-  echo 'Password: '.$password.' Lenght: '.strlen($password).'<br>';
+  echo 'Password: &nbsp;'.$password.'&nbsp;&nbsp; Lenght: &nbsp;'.strlen($password).'<br>';
 }
 
 
