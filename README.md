@@ -8,3 +8,5 @@ at least one uppercase letter from the US English alphabet (A-Z: ASCII codes 65-
 at least one lowercase letter from the US English alphabet (a-z: ASCII codes 97-122)
 at least one numeral (0-9: ASCII codes 48-57)
 at least one ‘special’ character chosen from the following:       !  "  #  $  %  &  '  (  )  *  +  ,  -  .  /  (ASCII codes 33-47)
+below is sample screenshot of generated passwords
+<img width="337" alt="Screenshot 2022-04-01 at 08 28 12" src="https://user-images.githubusercontent.com/54482059/161216191-9f904383-e736-40af-8763-86b58f61ca50.png">
